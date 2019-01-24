@@ -7,7 +7,7 @@ Hot-Reload [![Build Status](https://travis-ci.com/gekomad/hot-reload.svg?token=1
 Hot-reload is a static/dynamic configurator based on [Config](https://github.com/lambdista/config).
   
 ## Add the library to your project  
-`libraryDependencies += "com.github.gekomad" %% "hot-reload" % "0.1.0"`  
+`libraryDependencies += "com.github.gekomad" %% "hot-reload" % "0.2.0"`
   
 ## Motivations  
   
