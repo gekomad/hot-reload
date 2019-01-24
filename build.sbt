@@ -4,7 +4,7 @@ version := "0.2.0"
 organization := "com.github.gekomad"
 scalaVersion := "2.12.8"
 
-libraryDependencies += "com.lambdista" %% "config" % "0.5.4"
+libraryDependencies += "com.lambdista" %% "config" % "0.5.3"
 
 libraryDependencies += "org.scalatest" %% "scalatest"  % "3.0.5"  % Test
 
