@@ -1,6 +1,6 @@
 Hot-Reload [![Build Status](https://travis-ci.com/gekomad/hot-reload.svg?token=1xbwh9MbFSDwkakXU9cP&branch=master)](https://travis-ci.com/gekomad/hot-reload)
-[![codecov.io](http://codecov.io/github/gekomad/hot-reload/coverage.svg?branch=master)](http://codecov.io/github/gekomad/hot-reload?branch=master)  
-[![Javadocs](https://javadoc.io/badge/com.github.gekomad/hot-reload_2.12.svg)](https://javadoc.io/doc/com.github.gekomad/hot-reload_2.12)  
+[![codecov](https://codecov.io/gh/gekomad/hot-reload/branch/master/graph/badge.svg?token=m8RFhSrayb)](https://codecov.io/gh/gekomad/hot-reload)
+[![Javadocs](https://javadoc.io/badge/com.github.gekomad/hot-reload_2.12.svg)](https://javadoc.io/doc/com.github.gekomad/hot-reload_2.12)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.gekomad/hot-reload_2.12/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.gekomad/hot-reload_2.12)  
 ======  
 
