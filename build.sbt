@@ -1,6 +1,6 @@
 name := "hot-reload"
 
-version := "1.1.0"
+version := "2.0.0"
 organization := "com.github.gekomad"
 scalaVersion := "2.13.0-RC1"
 
