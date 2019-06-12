@@ -64,7 +64,7 @@ import com.github.gekomad.hotreload.core.HotReload
 copyFile(from = "/path/conf1.conf", to = "/path/mutable.conf")  
 
 //create HotReload from conf1.conf file  
-val hr: Try[HotReload[FooConfig]] = HotReload[FooConfig]("/path/mutable.conf")  
+val hr: Try[HotReload[FooConfig]] = HotReload[FooConfig]("/path/mutable.conf", mutable = true)
 
 hr match {  
   case Success(hotReload) => {  

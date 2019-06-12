@@ -1,13 +1,16 @@
 language: scala
 scala:
   - 2.13.0
+  - 2.12.8
+  - 2.12.6
+  - 2.11.12
 
 branches:
   only:
     - /.*/
 
 jdk:
-  - oraclejdk8
+  - openjdk8
 
 script:
   - sbt clean coverage test coverageReport

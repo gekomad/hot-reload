@@ -86,7 +86,7 @@ class Test1 extends FunSuite {
     copyFile(from = confPath1, to = confFile)
 
     //create HotReload from conf1.conf file
-    val hr: Try[HotReload[FooConfig]] = HotReload[FooConfig](confFile)
+    val hr: Try[HotReload[FooConfig]] = HotReload[FooConfig](confFile, mutable = true)
 
     hr match {
       case Success(hotReload) => {
