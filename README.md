@@ -1,13 +1,13 @@
 Hot-Reload [![Build Status](https://travis-ci.com/gekomad/hot-reload.svg?token=1xbwh9MbFSDwkakXU9cP&branch=master)](https://travis-ci.com/gekomad/hot-reload)
 [![codecov](https://codecov.io/gh/gekomad/hot-reload/branch/master/graph/badge.svg?token=m8RFhSrayb)](https://codecov.io/gh/gekomad/hot-reload)
-[![Javadocs](https://javadoc.io/badge/com.github.gekomad/hot-reload_2.12.svg)](https://javadoc.io/doc/com.github.gekomad/hot-reload_2.12)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.gekomad/hot-reload_2.12/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.gekomad/hot-reload_2.12)  
+[![Javadocs](https://javadoc.io/badge/com.github.gekomad/hot-reload_2.13.svg)](https://javadoc.io/doc/com.github.gekomad/hot-reload_2.13)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.gekomad/hot-reload_2.13/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.gekomad/hot-reload_2.13)
 ======  
 
 Hot-reload is a static/dynamic configurator based on [Config](https://github.com/lambdista/config).
   
 ## Add the library to your project  
-`libraryDependencies += "com.github.gekomad" %% "hot-reload" % "1.0.0"`
+`libraryDependencies += "com.github.gekomad" %% "hot-reload" % "1.1.0"`
   
 ## Motivations  
   
@@ -64,7 +64,7 @@ import com.github.gekomad.hotreload.core.HotReload
 copyFile(from = "/path/conf1.conf", to = "/path/mutable.conf")  
 
 //create HotReload from conf1.conf file  
-val hr: Try[HotReload[FooConfig]] = HotReload[FooConfig]("/path/mutable.conf")  
+val hr: Try[HotReload[FooConfig]] = HotReload[FooConfig]("/path/mutable.conf", mutable = true)
 
 hr match {  
   case Success(hotReload) => {  

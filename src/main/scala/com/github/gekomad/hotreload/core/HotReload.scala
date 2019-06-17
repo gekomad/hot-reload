@@ -91,7 +91,7 @@ object HotReload {
   /**
     *
     * @param path the path of conf file
-    * @param mutable if true (default) the conf class can be modified
+    * @param mutable if true the conf class can be modified
     * @return  the HotReload case class
     * {{{
     * import com.github.gekomad.hotreload.core.HotReload
@@ -100,7 +100,7 @@ object HotReload {
     *
     *}}}
     */
-  def apply[A: ConcreteValue](path: String, mutable: Boolean = true): Try[HotReload[A]] = {
+  def apply[A: ConcreteValue](path: String, mutable: Boolean): Try[HotReload[A]] = {
 
     val fooConfig: Try[A] = for {
       conf   <- Config.from(Paths.get(path))
