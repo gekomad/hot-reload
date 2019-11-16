@@ -32,24 +32,27 @@ Two (or more) configuration files could be created (one for the parameters that 
 ```  
  case class FooConfig(bar: String, baz: Option[Int], list: List[Int], missingValue: Option[String])  
 ```  
+
+file /path/conf1.conf:
 ```  
-file /path/conf1.conf:  
 {  
    bar = "conf_1",  
    baz = 1,  
    list = [1, 1, 111]  
 }  
-  ```  
-  ```  
-file /path/conf2.conf:  
+```  
+
+file /path/conf2.conf:
+```  
 {  
    bar = "conf_2",  
    baz = 2,  
    list = [2, 2, 222]  
 }  
 ```  
+
+file /path/confErr.conf:
 ```  
-file /path/confErr.conf:  
 {  
    bar = 1, // this is an error, bar must be a String  
    baz = 42,  
@@ -59,7 +62,7 @@ file /path/confErr.conf:
   
 ### Create a mutable config  
   
-```  
+```scala
 import com.github.gekomad.hotreload.core.HotReload  
 copyFile(from = "/path/conf1.conf", to = "/path/mutable.conf")  
 
@@ -94,7 +97,7 @@ hr match {
   
 ### Create an immutable config  
   
-```  
+```scala
 import com.github.gekomad.hotreload.core.HotReload  
     
 copyFile(from = "/path/conf1.conf", to = "/path/immutable.conf")  
